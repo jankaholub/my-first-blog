@@ -201,3 +201,5 @@ NameError: name 'true' is not defined. Did you mean: 'True'?
 
 
 myvenv\Scripts\activate
+
+#bootstrap.com, animate.css, w3schools
