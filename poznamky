@@ -1,0 +1,203 @@
+PS C:\Users\hotovo\Desktop\dg> python
+Python 3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> help
+Type help() for interactive help, or help(object) for help about object.
+>>> help()
+
+Welcome to Python 3.11's help utility!
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the internet at https://docs.python.org/3.11/tutorial/. 
+
+Enter the name of any module, keyword, or topic to get help on writing  
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module also comes
+with a one-line summary of what it does; to list the modules whose name
+or summary contain a given string such as "spam", type "modules spam".
+
+help> quit
+
+You are now leaving help and returning to the Python interpreter.
+If you want to ask for help on a particular object directly from the
+interpreter, you can type "help(object)".  Executing "help('string')"
+has the same effect as typing a particular string at the help> prompt.
+>>> 2+3
+5
+>>> 3*8
+24
+>>> ahoj*8
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ahoj' is not defined
+>>> 'ahoj'*8
+'ahojahojahojahojahojahojahojahoj'
+>>> `ahoj`
+  File "<stdin>", line 1
+    `ahoj`
+    ^
+SyntaxError: invalid syntax
+>>> ``` ahoj ```
+  File "<stdin>", line 1
+    ``` ahoj ```
+    ^
+SyntaxError: invalid syntax
+>>> ''' ahooj '''
+' ahooj '
+>>> 'ola'.upper()           
+'OLA'
+>>> len('kjsgkjagkjwagkjagdkja')
+21
+>>> len('23563')
+5
+>>> len(43535)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: object of type 'int' has no len()
+>>> len(   )
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: len() takes exactly one argument (0 given)
+>>> len(str(4644))
+4
+>>> int(4.5)
+4
+>>> int('ahoj')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: 'ahoj'
+>>> 0.1*0.2
+0.020000000000000004
+>>> meno = 'ola'
+>>> meno
+'ola'
+>>> len(ola)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ola' is not defined
+>>> len(meno)
+3
+>>> meno = sona
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sona' is not defined
+>>> meno = 'sona'
+>>> meno
+'sona'
+>>> a = 2
+>>> b = 3
+>>> a*b
+6
+>>> meno * a
+'sonasona'
+>>> meno + str(a)
+'sona2'
+>>> print meno
+  File "<stdin>", line 1
+    print meno
+    ^^^^^^^^^^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+>>> print(meno)
+sona
+>>> print(a*b)
+6
+>>> []  
+[]
+>>> loteria ['ola','maria']
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'loteria' is not defined
+>>> loteria = ['ola','maria'] 
+>>> lor
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'lor' is not defined
+>>> loteria
+['ola', 'maria']
+>>> len(loteria)
+2
+>>> loteria.sort()
+>>> loteria
+['maria', 'ola']
+>>> loteria.rec
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'rec'
+>>> loteria.reverse()
+>>> loteria
+['ola', 'maria']
+>>> loteria.append(22)
+>>> loteria
+['ola', 'maria', 22]
+>>> loteria.reverse()
+>>> loteria
+[22, 'maria', 'ola']
+>>> loteria.sort()    
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: '<' not supported between instances of 'str' and 'int'
+>>> loteria.pop(3)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: pop index out of range
+>>> loteria.pop(2)
+'ola'
+>>> loteria
+[22, 'maria']
+>>> loteria[0] 
+22
+>>> loteria[1]
+'maria'
+>>> {}  
+{}
+>>> ucastnicka = {'meno': 'ola', 'vek' : 13}
+>>> ucastnicka
+{'meno': 'ola', 'vek': 13}
+>>> print(ucastnicka['vek']
+... 
+... 
+... )
+13
+>>> ucastnicka['vek']=14
+>>> ucastnicka['vek']   
+14
+>>> ucastnicka.pop()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: pop expected at least 1 argument, got 0
+>>> ucastnicka.pop(vek) 
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'vek' is not defined
+>>> ucastnicka.pop('vek') 
+14
+>>> ucastnicka
+{'meno': 'ola'}
+>>> 1=1
+  File "<stdin>", line 1
+    1=1
+    ^
+SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?
+>>> 2<1
+False
+>>> 3==#
+  File "<stdin>", line 1
+    3==#
+       ^
+SyntaxError: invalid syntax
+>>> 3==3
+True
+>>> 3!=5
+True
+>>> a = true
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'true' is not defined. Did you mean: 'True'?
+>>> a = True
+>>> b = False
+
+
+myvenv\Scripts\activate
